@@ -84,7 +84,7 @@ nav ul a:active, a:active{
 }
 
 
-/* hamburger menu by alvarotrigo https://codepen.io/alvarotrigo/pen/wvrzPWL (edited) */
+/********************/
 
 .navbar {
     display: none;
@@ -117,7 +117,6 @@ nav ul a:active, a:active{
     top:15%;
     left:40%;
     width: 50%;
-    /* border: 1px dashed ; */
 }
 
 .container h1{
@@ -137,7 +136,6 @@ nav ul a:active, a:active{
 /*************/
 
 footer{
-    /* border: 1px dashed ; */
     margin-top: 2rem;
     min-height: 2rem;
     width: auto;
@@ -194,29 +192,7 @@ footer{
 .portfolio img {
     width: 70%;
   }
-/* tattoo */
 
-#tattooshowcase{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  justify-content: space-evenly;
-  position: relative;
-}
-#tattooshowcase img{
-    mix-blend-mode: multiply;
-    scale: 90%;
-    transition: all 0.3s ease;
-    max-height: 80vh;
-}
-#tattooshowcase img:hover{
- scale: 95%;
-}
-
-.highlight{
-    grid-row: span 3 / auto;
-    grid-column: span 2 / auto;
-}
 
 
 /* media query */
