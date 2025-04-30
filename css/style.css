@@ -247,5 +247,11 @@ body {
   
 }
 
+.container h1{
+  font-size: 120%;
 }
+
+.container h2{
+    font-size: 100%;
+  }
 }
