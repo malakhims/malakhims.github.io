@@ -217,10 +217,15 @@ cursor: url(img/cursor_click.png), auto;
 }
 
 /* Mobile styles */
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 900px) {
   nav   {
     display: flex;
+    font-size: 200%;
 
+  }
+
+  .title {
+    font-size: 250%;
   }
 
   /*container*/
@@ -228,17 +233,19 @@ cursor: url(img/cursor_click.png), auto;
   position: relative;
   color: #281405;
   padding: 2rem;
-  width: 96%;
+  width: 80%;
   left: 0;
 }
 
 body {
-  background-image: none;
+  background: url("") #fff1fc;
 }
 
 #malaika {
-  position: relative;
+    display: none;
+  }
   
 }
+
 }
 }
