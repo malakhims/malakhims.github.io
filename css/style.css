@@ -231,3 +231,14 @@ cursor: url(img/cursor_click.png), auto;
   width: 96%;
   left: 0;
 }
+
+body {
+  background-image: none;
+}
+
+#malaika {
+  position: relative;
+  
+}
+}
+}
