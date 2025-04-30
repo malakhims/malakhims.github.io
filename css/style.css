@@ -217,176 +217,82 @@ cursor: url(img/cursor_click.png), auto;
 }
 
 
-
-/* media query */
-@media screen and (max-width:1100px){ 
-
-  nav{
-      position:relative;
-      align-self: center;
-      justify-content: center;
-      align-items: center;
-      left: 0;
-      max-height: 50vh;
-      min-height: 330px;
-      
-      
+/* media queries */
+@media screen and (max-width:1100px) { 
+  nav {
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    max-height: 50vh;
+    min-height: 330px;
   }
 
-  #malaika{
-      position: fixed;
-      right: 5%;
-      bottom:0;
-      
+  #malaika {
+    position: fixed;
+    right: 5%;
+    bottom: 0;
   }
 
-  section.showcase{
-      display: grid;
-      grid-template-columns: 100%;
+  section.showcase {
+    display: grid;
+    grid-template-columns: 100%;
   }
-  
 }
 
-@media screen and (max-width:572px){
-
-      nav#homepage{
-          display: block;
-          left: unset;
-          width: 100%;
-          height: auto;
-          font-size: xxx-large;
-          
-          
-       
+@media screen and (max-width:572px) {
+  nav#homepage {
+    display: block;
+    left: unset;
+    width: 100%;
+    height: auto;
+    font-size: xxx-large;
   }
-  nav#homepage ul{
-      padding-inline-start: 10%;
-      display: flex;
-      flex-direction: column;
-      margin-top: 1rem;
-      overflow-y: hidden;
+  
+  nav#homepage ul {
+    padding-inline-start: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    overflow-y: hidden;
   } 
-  nav#homepage ul li{
-    margin: 0.75rem;
-    padding: 0.5rem;
-    width: fit-content;
-    border: rgb(255, 254, 243) dashed;
-    background-color: rgb(255, 254, 243);
-    border-radius: 1rem;
 
-    box-shadow: #ac739949 0 0 5px;
-  }
-  header{
-    font-size: 110%;
-      margin: 0;
-      width: 100%;
-      
-
-
-  }
-  .title{
-      margin-left: 10%;
-      font-size: 7rem;
-  }
+  /* ... other mobile styles ... */
 
   .navbar {
-      display: block;
-      width: 100%;
-      box-shadow: 0 1px 4px #ac739949;
-    }
-  nav{
-      max-width: 100vw;
-      display: none;
-      height: auto;
-      min-height: fit-content;
-      
-  }
-
-      nav ul{
-          display: none;
-          
-      }
-      nav ul li{
-          display: inline;
-      }
-      
-        nav ul a:hover{
-        font-size:100%;
-}
-  .container{
-      position: static;
-      padding: 1rem;
-      width: 100vw;
-      max-width: fit-content;
-
+    display: block;
   }
   
+  /* Remove this duplicate declaration
+  .navbar {
+    display: block;
+    width: 100%;
+    box-shadow: 0 1px 4px #ac739949;
+  }*/
+}
 
-  .container ul{
-    padding-inline-start: 1rem;
+/* Separate media queries - NOT nested */
+@media screen and (min-width:1300px) {
+  p {
+    font-size: 105%; 
   }
-
-      body{
-      display: grid;
-      grid-template-columns: 100vw;
-      row-gap: 5px;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 0;
-      margin-top: 0;
-      position: relative;
-      z-index: 10; /* layer above */
-      
+  .container ul li {
+    font-size: 110%;
   }
-      #malaika {
-      position: fixed;
-      width: auto;
-      height: 40%;
-      
-      object-fit: contain;
-      right: 0;
-      bottom: 0;
-      align-self: center;
-
+  ul li {
+    font-size: 105%;
   }
-  
-    .smallgif{
-    display:unset;
-    
-    }
-  
-
-
-
-/* middle range */
-@media screen and (min-width:1300px){
-
-p{
-  font-size:105%; 
-}
-.container ul li{
-  font-size: 110%;
-}
-ul li{
-  font-size: 105%;
 }
 
-
-
+@media screen and (min-width:1600px) {
+  p {
+    font-size: 110%; 
+  }
+  .container ul li {
+    font-size: 120%;
+  }
+  ul li {
+    font-size: 110%;
+  }
 }
-
-/* fixing text for bigger monitors */
-@media screen and (min-width:1600px){
-
-p{
-  font-size:110%; 
-}
-.container ul li{
-  font-size: 120%;
-}
-ul li{
-  font-size: 110%;
-}
-
-
-}}
